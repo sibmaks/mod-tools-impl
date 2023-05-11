@@ -1,6 +1,7 @@
 package com.github.sib_energy_craft.tools.load;
 
 import com.github.sib_energy_craft.energy_api.utils.Identifiers;
+import com.github.sib_energy_craft.sec_utils.load.DefaultModInitializer;
 import com.github.sib_energy_craft.tools.item.tree_tap.TreeTapItem;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
@@ -16,8 +17,7 @@ import static com.github.sib_energy_craft.sec_utils.utils.ItemUtils.register;
  * @since 0.0.1
  * @author sibmaks
  */
-@NoArgsConstructor(access = AccessLevel.PRIVATE)
-public final class Items {
+public final class Items implements DefaultModInitializer {
     public static final Item TREE_TAP;
 
     static {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sec-mod-tools-impl",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "name": "SibEnergyCraft - Tools Implementation",
   "authors": [
     "sibmaks"
@@ -17,7 +17,7 @@
   },
   "entrypoints": {
     "main": [
-      "com.github.sib_energy_craft.tools.load.Loader"
+      "com.github.sib_energy_craft.tools.load.Items"
     ]
   }
 }
