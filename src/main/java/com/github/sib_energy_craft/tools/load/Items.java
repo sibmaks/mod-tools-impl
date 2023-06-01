@@ -3,8 +3,6 @@ package com.github.sib_energy_craft.tools.load;
 import com.github.sib_energy_craft.energy_api.utils.Identifiers;
 import com.github.sib_energy_craft.sec_utils.load.DefaultModInitializer;
 import com.github.sib_energy_craft.tools.item.tree_tap.TreeTapItem;
-import lombok.AccessLevel;
-import lombok.NoArgsConstructor;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ToolMaterials;
