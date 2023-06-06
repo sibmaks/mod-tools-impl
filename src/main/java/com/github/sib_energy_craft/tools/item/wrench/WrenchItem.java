@@ -61,17 +61,26 @@ public class WrenchItem extends Item {
     }
 
     @NotNull
-    private static ActionResult changeBlockState(ItemUsageContext context,
-                                                 World world,
-                                                 BlockPos blockPos,
-                                                 BlockState blockState) {
-        var stack = context.getStack();
-        var player = context.getPlayer();
-        if(player != null && !player.isCreative()) {
-            stack.damage(1, player, p -> p.sendToolBreakStatus(context.getHand()));
-        }
+    protected ActionResult changeBlockState(ItemUsageContext context,
+                                            World world,
+                                            BlockPos blockPos,
+                                            BlockState blockState) {
+        onUse(context);
         world.setBlockState(blockPos, blockState, Block.NOTIFY_ALL);
         return ActionResult.SUCCESS;
+    }
+
+    /**
+     * Called each time when wrench used on block
+     *
+     * @param context wrench usage context
+     */
+    protected void onUse(ItemUsageContext context) {
+        var player = context.getPlayer();
+        if(player != null && !player.isCreative()) {
+            var stack = context.getStack();
+            stack.damage(1, player, p -> p.sendToolBreakStatus(context.getHand()));
+        }
     }
 
 }
