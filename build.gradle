@@ -29,7 +29,10 @@ dependencies {
 
     modImplementation "com.github.sib-energy-craft:energy-api:${project.sec_energy_api_version}"
     modImplementation "com.github.sib-energy-craft:sec-utils:${project.sec_utils_version}"
+
     modImplementation "com.github.sib-energy-craft:mod-tools-api:${project.sec_mod_tools_api_version}"
+
+    modImplementation("com.github.sib-energy-craft:mod-metallurgy:${project.sec_mod_metallurgy_version}")
 }
 
 processResources {
