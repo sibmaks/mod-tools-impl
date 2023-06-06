@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 
 
 /**
- * @since 0.0.6
+ * @since 0.0.5
  * @author sibmaks
  */
 public class WrenchItem extends Item {
