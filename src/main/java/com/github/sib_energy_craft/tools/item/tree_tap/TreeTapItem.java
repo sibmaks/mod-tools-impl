@@ -16,6 +16,9 @@ import net.minecraft.util.Hand;
  * @author sibmaks
  */
 public class TreeTapItem extends MiningToolItem implements TreeTap {
+    /**
+     * Tree tap item tag
+     */
     public static final TagKey<Block> TREE_TAP_TAG;
 
     static {

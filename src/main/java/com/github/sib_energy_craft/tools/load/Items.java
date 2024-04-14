@@ -17,7 +17,13 @@ import static com.github.sib_energy_craft.sec_utils.utils.ItemUtils.register;
  * @author sibmaks
  */
 public final class Items implements DefaultModInitializer {
+    /**
+     * Tree tap item reference
+     */
     public static final Item TREE_TAP;
+    /**
+     * Wrench item reference
+     */
     public static final Item WRENCH;
 
     static {
